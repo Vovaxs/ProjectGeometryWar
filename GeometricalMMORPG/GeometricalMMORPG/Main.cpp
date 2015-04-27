@@ -1,4 +1,5 @@
-#include "main.h";
+#include "main.h"
+#include "Artist.h"
 
 bool init()
 {
@@ -92,6 +93,7 @@ int main(int argc, char* args[])
 				while (SDL_PollEvent(&e) != 0)
 				{
 					//User requests quit
+					draw_rect(gScreenSurface);
 					if (e.type == SDL_QUIT)
 					{
 						quit = true;
