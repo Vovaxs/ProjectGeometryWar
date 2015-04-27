@@ -44,11 +44,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>Z:\Documents\Visual Studio 2013\Projects\Libraries\SDL2_mixer-2.0.0\include;Z:\Documents\Visual Studio 2013\Projects\Libraries\SDL2_image-2.0.0\include;Z:\Documents\Visual Studio 2013\Projects\Libraries\SDL2-2.0.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\mfade_000\Documents\GitHub\SDL2-2.0.3\include;C:\Users\mfade_000\Documents\GitHub\SDL2_image-2.0.0\include;C:\Users\mfade_000\Documents\GitHub\SDL2_mixer-2.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>Z:\Documents\Visual Studio 2013\Projects\Libraries\SDL2_mixer-2.0.0\lib\x86;Z:\Documents\Visual Studio 2013\Projects\Libraries\SDL2_image-2.0.0\lib\x86;Z:\Documents\Visual Studio 2013\Projects\Libraries\SDL2-2.0.3\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\mfade_000\Documents\GitHub\SDL2-2.0.3\lib\x86;C:\Users\mfade_000\Documents\GitHub\SDL2_image-2.0.0\lib\x86;C:\Users\mfade_000\Documents\GitHub\SDL2_mixer-2.0.0\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -68,8 +68,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Artist.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Artist.cpp" />
