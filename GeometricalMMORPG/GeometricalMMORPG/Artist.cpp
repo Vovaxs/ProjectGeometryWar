@@ -1,26 +1,33 @@
 #include "Artist.h"
 
-void draw_rect(SDL_Surface * surf){
-	Uint32 color = SDL_MapRGB(surf->format, 255, 0, 255);
+void Artist::draw_rect(SDL_Surface * surf, int xPos, int yPos, int width, int height, int R, int G, int B){
+	if (R > 255) R = 255;
+	if (R < 0) R = 0;
+	if (G > 255) G = 255;
+	if (G < 0) G = 0;
+	if (B > 255) B = 255;
+	if (B < 0) B = 0;
 
-	SDL_Rect test;
+	Uint32 color = SDL_MapRGB(surf->format, R, G, B);
 
-	test.x = 100;
-	test.y = 200;
-	test.w = 100;
-	test.h = 100;
+	SDL_Rect rect;
 
-	SDL_FillRect(surf, &test, color);
+	rect.x = xPos;
+	rect.y = yPos;
+	rect.w = width;
+	rect.h = height;
+
+	SDL_FillRect(surf, &rect, color);
 }
-void draw_rect_texture(){
+void Artist::draw_rect_texture(){
 
 }
 
-void draw_circle(){
+void Artist::draw_circle(){
 
 }
 
-void draw_line(){
+void Artist::draw_line(){
 
 }
 
