@@ -16,16 +16,34 @@
     <Filter Include="Source Files\Gfx">
       <UniqueIdentifier>{a4c8089a-7876-48e9-ae28-981a931d8ca5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{e2c369ad-1003-486d-ad0a-e3953d3ec0c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gfx">
+      <UniqueIdentifier>{c929fd57-cbd6-47d4-a5ce-cd5eaa50d351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{cfe04ec0-3742-4872-9f24-53d2253add1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{b47f1d81-897a-4003-938f-3633bbebd3dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Artist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Frame.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Artist.h">
+      <Filter>Header Files\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>Header Files\Utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -37,6 +55,9 @@
     </ClCompile>
     <ClCompile Include="Frame.cpp">
       <Filter>Source Files\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Game</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
